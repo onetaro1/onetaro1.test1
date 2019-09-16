@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@media screen and (min-width: 896px){
+  .l-nav{
+    background-color: white;
+    width: 23%;
+    height: 100%;
+    position: fixed;
+  }
+  .pc-ttl{
+    width: 100%;
+  }
+  .pc-ttl img{
+    width: 100%;
+    padding: 25px;
+  }
+  .navs li{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .navs img{
+    width: 170px;
+  }
+  .pc-copy{
+    background: #dedede;
+    border: solid 1.5px black;
+    height: 160px;
+  }
+  .pc-copy p{
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .pc-copy img{
+    width: 50%;
+    padding: 20px 20px 0 20px;
+  }
+  .pc-contet{
+    margin-left: 23%;
+    width: 77%;
+    text-align: right;
+
+  }
+  .pc-contet img{
+    width: 100%;
+      height: 749px;
+    /* margin-left: 23%;
+    width: 77%;
+    text-align: right;
+    height: 749px; */
+    /* border: solid 2px black; */
+  }
+}

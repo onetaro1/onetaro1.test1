@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* 使用するときはBoxをけしてもいい */
+@media screen and (min-width: 0px){
+
+/* ここからスタート */
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",sans-serif;
+    text-align: center;
+  }
+  body,header,div,main,section,ul,li,a,img{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #dedede;
+    position: fixed;
+    z-index: 1;
+  }
+  .pad-only{
+    display: none;
+  }
+  .pc-only{
+    display: none;
+  }
+  .logo img{
+    width: 50px;
+    margin-left: 8px;
+  }
+  .top-ttl img{
+    width: 150px;
+    margin-top: 5px;
+  }
+  #nav-bar{
+    width: 50px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+  .top{
+    background: url(../img/top-back1.jpg);
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: 80% 0%;
+    position: relative;
+  }
+  .top img{
+    width: 250px;
+    margin-top: 70px;
+  }
+  .sp-only{
+    display: block;
+  }
+  .underpic{
+    width: 100%;
+  }
+  .top1{
+    background: url(../img/top-back2.png);
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    background-position: 45% 0%;
+    position: relative;
+
+  }
+  .contents{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item{
+    width: 47%;
+    margin-top: 8px;
+  }
+  .item:hover{
+    opacity: 0.7;
+  }
+  .item:nth-of-type(odd){
+    margin-right: 1%;
+    margin-left: 2%;
+  }
+  .item:nth-of-type(even){
+    margin-right: 2%;
+    margin-left: 1%;
+  }
+  .item img{
+    width: 100%;
+  }
+  .item p{
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-weight: bold;
+  }
+  .section-pic{
+     padding-top: 54px;
+  }
+  .section-pic img{
+   width: 100%;
+  }
+  .responsive{
+    padding-top: 20px;
+  }
+  #store .section-title{
+    margin-bottom: 10px;
+  }
+  .contents02 ul{
+    margin: 0;
+    padding: 0;
+  }
+  .contents02 ul li{
+    /* width: 100%; */
+    margin-bottom: 21px;
+  }
+  .contents02 li:hover{
+    opacity: 0.7;
+  }
+  .contents02 ul li img{
+    width: 90%;
+  }
+  footer{
+    position: relative;
+    background: url(../img/f-back.png);
+    height: 242px;
+    background-size: cover;
+    margin-top: 75px;
+  }
+  .up-btn {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .up-btn p{
+    display: inline-block;
+    position: absolute;
+    top: -80px;
+    left: 41%;
+    font-size: 41px;
+    font-weight: bold;
+    background: white;
+    border: solid 5px #D0EBE9;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .address{
+    padding-top: 35px;
+  }
+  .address + img{
+    padding-top: 30px;
+  }
+  }
+
+
+
+
+/* タブレット用サイズ  start*/
+
+  @media screen and (min-width: 480px){
+    .box{
+      background: #11ff11;
+    }
+    .box h1{
+      font-size: 0;
+    }
+    .box h1::before{
+      content: "タブレットサイズ";
+      font-size: 12px;
+    }
+    .sp-only{
+      display: none;
+    }
+    .pad-only{
+      display: block;
+    }
+    /* ここからスタート */
+    #mainTop{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .top,.top1{
+      width: 50%;
+      height: 520px;
+    }
+    .top img{
+      display: none;
+    }
+    .a1{
+      margin: 0 auto;
+      height: 80px;
+    }
+    .s-nav{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    .s-nav a{
+      display: inline-block;
+      width: 50%;
+    }
+      .s-nav a:hover{
+        opacity: 0.7;
+      }
+    /* .s-nav a:nth-of-type(1){
+      background: url(img/pad/s-nav-1.png);
+      ba
+    }
+    .s-nav a:nth-of-type(2){
+      background: url(img/pad/s-nav-2.png);
+    } */
+    .s-nav a:nth-of-type(3){
+      margin-top: -3px;
+    }
+    .s-nav a:nth-of-type(4){
+      margin-top: -3px;
+    }
+    .s-nav img{
+      width: 100%;
+    }
+    .contents02 ul li img{
+      width: 100%;
+      /* margin-bottom: 21px; */
+    }
+    .top-ttl img{
+      width: 370px;
+      margin-top: 10px;
+
+    }
+  }
+
+
+/* ＰＣ用サイズ start*/
+
+  @media screen and (min-width: 896px){
+    .box{
+      background: #1111ff;
+    }
+    .box h1::before{
+      content: "pcサイズ";
+      font-size: 12px;
+    }
+    .pad-only{
+      display: none;
+    }
+
+    /* ここからスタート */
+    header{
+      display: none;
+    }
+    .pc-only{
+      display: block;
+    }
+    #mainTop{
+      display: none;
+    }
+    #menu{
+      display: none;
+    }
+    #service{
+      display: none;
+    }
+    #campaign{
+      display: none;
+    }
+    #store{
+      display: none;
+    }
+    footer{
+      display: none;
+    }
+  }
